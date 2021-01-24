@@ -275,6 +275,7 @@ a::hover {
 }
 .section__main-title-wrapper p {
   color: #c1c1c1;
+  padding: 8px 0;
 }
 .section__main-title-wrapper-text {
   position: relative;
