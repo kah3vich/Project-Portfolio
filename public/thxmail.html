@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+
+    <!-- Слайдер - стили .css -->
+    <link rel="stylesheet" href="../add/swiper 6.4.5.css">
+
+    <!-- Слайдер - скрипты .js -->
+    <script src="../add/swiper 6.4.5.js"></script>
+
+    <!-- Логотип сайта -->
+    <link rel="shortcut icon" href="../images/logos.png"/>
+
+    <!-- FONTS - Шрифты -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- JQUERY - Для работы дополнительных библиотек -->
+    <script src="../add/jquery 3.5.1 .js"></script>
+
+    <!-- GSAP - Анимация и работа меню -->
+    <script src="../add/GSAP 3.5.1 .js"></script>
+
+    <!-- WOW animation - анимация блоков -->
+    <link rel="stylesheet" href="../add/animate css 3.1.0.css">
+    <script src="../add/WOW js 1.0.1.js"></script>
+
+    <!-- Создает текст в виде круга ( в логотипе сайта ) -->
+    <script src="../add/circle.js"></script>
+
+    <!-- Настройка скролла -->
+    <script src="../add/jquery.nicescroll.js"></script>
+
+    <!-- Иконки -->
+    <link rel="stylesheet" href="../add/font-awesome.min.css">
+
+    <!-- Анимация прогресса в блоке - способности -->
+    <script src="../add/jquery.easypiechart.js"></script>
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="../css/thxmail.css">
+
+    <!-- Выпадающая табличка -->
+    <link rel="stylesheet" href="../add/sweetalert2 7.12.15.css">
+    <script src="../add/sweetalert2 7.12.15.js"></script>
+    
+</head>
+<body>
+    
+    <!-- Оболочка всего сайта -->
+    <div class="wrapper">
+
+        <!-- Ссылка на главный блок -->
+        <a name="home"></a>
+        <!-- END - Ссылка на главный блок -->
+
+        <!-- Главный блок -->
+        <section class="section__main">
+
+            <!-- Шапка -->
+            <div class="section__main-logo wow fadeInUp" data-wow-delay="0.8s">
+
+                <!-- Логотип -->
+                <div class="section__main-logo-wrapper">
+                    <h2 class="logos" id="logos"> css • html • javascript • php • scss • </h2>
+                    <a href="../index.html#home"><h2 class="logos-title">PORTFOLIO</h2></a>
+                </div>
+                <!-- END - Логотип -->
+
+            </div>
+            <!-- END - Шапка -->
+
+            <div class="section__main-title">
+                <h2 class="wow fadeInUp" data-wow-delay="0.8s">Thank</h2>
+                <div class="section__main-title-container wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="section__main-title-container__circle">
+                        <span id="circle"> сообщение • отправлено • сообщение • отправлено • сообщение • отправлено • </span>
+                    </div>
+                </div>
+            </div>
+            <p class="section__main-text">Спасибо, за ваше письма, оно было отправлено боту на обработку, ждите ответа в ближайшее время.</p>
+            <div class="section__main-button-container">
+                <input class="section__main-button-back" type="button" onclick="history.back(-2); return false;" value="Назад"/>
+                <form action="../index.html#home" target="_self">
+                    <button class="section__main-button-next">На главную</button>
+                </form>
+            </div>
+
+        </section>
+        <!-- END - Главный блок -->
+
+
+        <!-- Подвал -->
+        <section class="section__footer">
+            <div class="container">
+                <div class="section__footer-title">
+                    <div class="section__footer-title-item">
+                        <p class="wow fadeInUp"><a href="https://github.com/kah3vich/Project-Portfolio/blob/master/README.md">Do you want to know more? click on me.</a></p>
+                    </div>
+                </div>
+                <div class="section__footer-hr wow slideInRight" data-wow-delay="0.8s"></div>
+                <div class="section__footer-info">
+                    <div class="item">
+                        <p class="section__footer-info-title wow fadeInUp">my name</p>
+                        <h4 class="wow fadeInUp" data-wow-delay="0.2s">kahevich</h4>
+                    </div>
+                    <div class="section__footer-info-item">
+                        <p class="section__footer-info-title wow fadeInUp" data-wow-delay="0s">contact</p>
+                            <ul class="section__footer-info-list">
+                                <li class="wow fadeInUp" data-wow-delay="0.2s">
+                                    <a href="https://vk.com">
+                                        <i class="fa fa-vk" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="wow fadeInUp" data-wow-delay="0.5s">
+                                    <a href="https://github.com/kah3vich">
+                                        <i class="fa fa-gitlab" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="wow fadeInUp" data-wow-delay="0.8s">
+                                    <a href="https://gitlab.com/kah3vich">
+                                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="section__footer-contact-item">
+                        <p class="section__footer-contact-title wow fadeInUp" data-wow-delay="0s">email</p>
+                        <h4 class="wow fadeInUp" data-wow-delay="0.2s">bot.circle@mail.ru</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END - Подвал -->
+        
+    </div>
+    <!-- END - Оболочка всего сайта -->
+
+    <!-- Свои скрипты -->
+    <script src="../js/mail.js"></script>
+    <!-- END - Свои скрипты -->
+
+    <!-- Выпадающие табличка -->
+    <script>
+        swal("Спасибо", "Ваше письмо отправлено!", "success");
+    </script>
+    <!-- END - Выпадающие табличка -->
+
+</body>
+</html>

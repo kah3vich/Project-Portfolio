@@ -1,0 +1,298 @@
+/* ! ---------------------------------------
+! Общие параметры 
+! ---------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: #000;
+  display: none;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 5px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
+a::hover {
+  color: #fff;
+}
+
+/* ! ----------------------------------------------------------------- 
+
+! - свойства для главного блоке
+? - свойства для дополнительного блока от главного
+* - свойства для дополнительного блока от дополнительного блока
+
+! ----------------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.hr {
+  background: #fff;
+  height: 1.2px;
+}
+
+/*! Иконки */
+
+.fa-github-square {
+  color: #fff;
+  font-size: 27px;
+  transform: translateX(3px);
+}
+.fa-gitlab {
+  color: #fff;
+  font-size: 27px;
+}
+.fa-vk {
+  color: #fff;
+  font-size: 27px;
+}
+
+/* ! ---------------------------------------
+! Главный страница - index  
+! ---------------------------------------- */
+
+/*! Главный блок */
+.section__main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+}
+.section__main-logo {
+  width: 100%;
+  position: fixed;
+  height: 83px;
+  background-color: #000;
+  z-index: 1;
+}
+
+/* ! Блок с кругом и текстом */
+.section__main-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -20px) rotate(45deg);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 20px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/*? Центральный круг */ 
+.section__main-title-container__circle {
+  font-size: 24px;
+  transition: 0.5s ease-out;
+  color: #fff;
+}
+.section__main-title-container {
+  position: absolute;
+  top: -87%;
+  left: 50%;
+  z-index: -1;
+}
+
+/*? текст */
+.section__main-title h2 {
+  font-size: 100px;
+  font-weight: 900;
+  text-transform: uppercase !important;
+  color: red;
+}
+/*! текст */
+.section__main-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  width: 30%;
+  text-align: center;
+  color: gray;
+  line-height: 28px;
+  font-size: 20px;
+}
+.section__main-button-container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section__main-button-back {
+  width: 155px;
+  height: 40px;
+  background-color: rgba(128, 128, 128, 1);
+  border: none;
+  outline: none;
+  transition: all .5s ease-in-out;
+  border-radius: 5px;
+}
+.section__main-button-back:hover {
+  background-color: #fff;
+  transition: all .5s ease-in-out;
+}
+.section__main-button-next {
+  width: 155px;
+  height: 40px;
+  background-color: rgba(128, 128, 128, 1);
+  border: none;
+  outline: none;
+  transition: all .5s ease-in-out;
+  border-radius: 5px;
+}
+.section__main-button-next:hover {
+  background-color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+/*! Логотип - главного блока */
+.section__main-logo-wrapper {
+  position: fixed;
+  margin: 2em;
+  color: white;
+  font-style: 16px;
+  padding: 0 0 0 10px;
+}
+.logos-title {
+  color: red;
+  margin: 0;
+  font-size: 16px;
+}
+#logos  {
+  color: #fff;
+  font-family: Helvetica;
+  font-weight: 100;
+  font-size: 9px;
+}
+.logos {
+  animation: logo 20s linear infinite;
+  position: absolute;
+  top: -23px;
+  z-index: -1;
+}
+@keyframes logo  {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*! Подвал */
+.section__footer {
+  background-color: #000;
+  padding-bottom: 30px;
+}
+.section__footer-title {
+  text-align: left;
+  width: 100%;
+  padding: 20px 0;
+}
+.section__footer-title p {
+  font-weight: lighter !important;
+}
+.section__footer-hr {
+  background: #fff;
+  height: 1.2px;
+}
+.section__footer-info {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.section__footer-info h4 {
+  font-size: 18px;
+  font-weight: lighter;
+  color: gray;
+}
+.section__footer-info p {
+  color: #fff;
+  font-weight: lighter;
+}
+.section__footer-info li {
+  font-weight: lighter;
+  color: #fff;
+  font-size: 18px;
+  padding-left: 20px;
+}
+.section__footer-info li:nth-child(1) {
+  padding-left: 0;
+}
+.section__footer-info-title,
+.section__footer-contact-title {
+  padding-bottom: 20px;
+}
+.section__footer-info-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+@media(max-width: 768px) {
+  .section__footer-title {
+    text-align: center;
+  }
+
+  .section__footer-info ul {
+    margin: 0 0 0 -22px;
+    padding: 0;
+  }
+}
+
+/* ! ----------------------------------------------------------- */ 

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+
+    <!-- Слайдер - стили .css -->
+    <!-- <link rel="stylesheet" href="add/swiper 6.4.5.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Слайдер - скрипты .js -->
+    <!-- <script src="add/swiper 6.4.5.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Логотип сайта -->
+    <link rel="shortcut icon" href="images/logos.png"/>
+
+    <!-- FONTS - Шрифты -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- JQUERY - Для работы дополнительных библиотек -->
+    <!-- <script src="add/jquery 3.5.1 .js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- GSAP - Анимация и работа меню -->
+    <script src="add/GSAP 3.5.1 .js"></script>
+
+    <!-- WOW animation - анимация блоков -->
+    <link rel="stylesheet" href="add/animate css 3.1.0.css">
+    <script src="add/WOW js 1.0.1.js"></script>
+
+    <!-- Создает текст в виде круга ( в логотипе сайта ) -->
+    <script src="add/circle.js"></script>
+
+    <!-- Настройка скролла -->
+    <script src="add/jquery.nicescroll.js"></script>
+
+    <!-- Иконки -->
+    <link rel="stylesheet" href="add/font-awesome.min.css">
+
+    <!-- Анимация прогресса в блоке - способности -->
+    <script src="add/jquery.easypiechart.js"></script>
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+    <!-- Оболочка всего сайта -->
+    <div class="wrapper">
+
+        <!-- Ссылка на главный блок -->
+        <a name="home"></a>
+        <!-- END - Ссылка на главный блок -->
+
+        <!-- Главный блок -->
+        <section class="section__main">
+
+            <!-- Шапка -->
+            <div class="section__main-logo">
+
+                <!-- Логотип -->
+                <div class="section__main-logo-wrapper">
+                    <h2 class="logos" id="logos"> css • html • javascript • php • scss • </h2>
+                    <a href="index.html#home"><h2 class="logos-title">PORTFOLIO</h2></a>
+                </div>
+                <!-- END - Логотип -->
+
+                <!-- Бургер меню - Открыть -->
+                <div class="menu-open">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+                <!-- END - Бургер меню - Открыть -->
+
+            </div>
+            <!-- END - Шапка -->
+
+
+            <!-- Контент меню -->
+            <div class="section__main-menu">
+
+                <!-- Бургер меню - Закрыть -->
+                <div class="menu-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <!-- END - Бургер меню - Закрыть -->
+
+                <!-- Содержимое меню -->
+                <div class="menu-links">
+                    <div class="link menu-link-1">
+                        <a href="#home">Главная</a>
+                    </div>
+                    <div class="link menu-link-2">
+                        <a href="#live">Об авторе</a>
+                    </div>
+                    <div class="link menu-link-3">
+                        <a href="#skills">Способности</a>
+                    </div>
+                    <div class="link menu-link-4">
+                        <a href="#work">Работы</a>
+                    </div>
+                    <div class="link menu-link-5">
+                        <a href="#contact">Cвязь</a>
+                    </div>
+                </div>
+                <!-- END - Содержимое меню -->
+
+                <!-- Дополнительный элемент меню -->
+                <div class="section__main-menu-title">PORTFOLIO</div>
+                <!-- END - Дополнительный элемент меню -->
+
+                <!-- Дополнительные иконки с ссылками на контакты в меню -->
+                <div class="section__main-menu-icons">
+                    <div class="link">
+                        <a href="https://vk.com/feed">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="https://gitlab.com/kah3vich">
+                            <i class="fa fa-gitlab" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/kah3vich">
+                            <i class="fa fa-github-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- END - Дополнительные иконки с ссылками на контакты -->
+
+            <!-- Блок с кругом и текстом -->
+            <div class="section__main-title">
+                <div class="section__main-title-circle wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="circleOne circle">
+                        <img src="images/circle.png" alt=""/>
+                    </div>
+                    <div class="circleTwo circle">
+                        <img src="images/circle.png" alt=""/>
+                    </div>
+                </div>
+                <div class="section__main-title-wrapper wow fadeInUp" data-wow-delay="0.85s">
+                    <h1 class="section__main-title-wrapper-text" data-text="KAH3VICH">KAH3VICH</h1>
+                    <p>Добро пожаловать.</p>
+                    <p>В данном сайте, вы можете увидеть информацию об авторе, его работы и способы связи с ним.</p>
+                </div>
+            </div>
+            <!-- END - Блок с кругом и текстом -->
+
+            <!-- Дополнительный символ внизу блока ( ссылка ) -->
+            <div class="section__main-addText wow fadeInUp" data-wow-delay="1.2s">
+                <a href="public/music.html">スカーロード</a>
+            </div>
+            <!-- END - Дополнительный символ внизу блока ( ссылка ) -->
+
+            <!-- Дополнительные иконки с ссылками на контакты в блоке -->
+            <div class="section__main-addIcons">
+                <ul>
+                <li class="wow fadeInUp" data-wow-delay="1.2s">
+                    <a href="https://vk.com">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="wow fadeInUp" data-wow-delay="1.5s">
+                    <a href="https://gitlab.com/kah3vich">
+                        <i class="fa fa-gitlab" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="wow fadeInUp" data-wow-delay="1.8s">
+                    <a href="https://github.com/kah3vich">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            <!-- END - Дополнительные иконки с ссылками на контакты в блоке -->
+
+        </section>
+        <!-- END - Главный блок -->
+
+        <!-- Переходный блок к блок - с белым фоном -->
+        <section class="section__transition__white">
+            <div class="container">
+                <div class="section__transition__white-container">
+                    <div class="section__transition__white-container-nubmer wow fadeInUp" data-wow-delay="0.5s">
+                        <p class="section__transition__white-container-number-item">01</p>
+                    </div>
+                    <div class="section__transition__white-container-title wow fadeInUp" data-wow-delay="0.8s">
+                        <p class="section__transition__white-container-title-item">Об авторе</p>
+                    </div>
+                    <div class="section__transition__white-container-text wow fadeInUp" data-wow-delay="1.1s">
+                        <p class="section__transition__white-container-text-item">В этом блоке вы можете узнать, чем занимается автор в свободное время и не только.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END - Переходный блок к блок - с белым фоном -->
+
+        <!-- Ссылка на блок - Об авторе -->
+        <a name="live"></a>
+        <!-- END - Ссылка на блок - Об авторе -->
+        
+        <!-- Блок - Об авторе -->
+        <section class="section__live">
+            <div class="section__live-indent"></div>
+            <a href="public/calisthenica.html">
+                <div class="section__live-calisthenica wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="section__live-calisthenica-block">
+                        <img class="section__live-calisthenica-block-image" src="images/live/calisthenica/calisthenica_1.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="section__live-indent"></div>
+            <a href="public/movie.html">
+                <div class="section__live-movie wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="section__live-movie-block">
+                        <img class="section__live-movie-block-image" src="images/live/movie/movie_1.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="section__live-indent"></div>
+            <a href="public/music.html">
+                <div class="section__live-music wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="section__live-music-block">
+                        <img class="section__live-music-block-image" src="images/live/music/music_1.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="section__live-indent"></div>
+            <a href="public/programming.html">
+                <div class="section__live-programming wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="section__live-programming-block">
+                        <img class="section__live-programming-block-image" src="images/live/programming/programming_1.jpg" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="section__live-indent"></div>
+        </section>
+        <!-- END - Блок - Об авторе -->
+
+        <!-- Переходный блок к блок - с линиями -->
+        <section class="section__transition__line">
+            <div class="hr wow slideInRight" data-wow-delay="0.8s"></div>
+            <div class="container">
+                <div class="section__transition__line-container">
+                    <div class="section__transition__line-container-nubmer wow fadeInUp" data-wow-delay="0.5s">
+                        <p class="section__transition__line-container-number-item">02</p>
+                    </div>
+                    <div class="section__transition__line-container-title wow fadeInUp" data-wow-delay="0.8s">
+                        <p class="section__transition__line-container-title-item">Способности</p>
+                    </div>
+                    <div class="section__transition__line-container-text wow fadeInUp" data-wow-delay="1.1s">
+                        <p class="section__transition__line-container-text-item">В данном блоке вы можете видеть уровень знаний автора в определенных областях</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hr wow slideInRight" data-wow-delay="0.8s"></div>
+        </section>
+        <!-- END - Переходный блок к блок - с линиями -->
+
+        <!-- Ссылка на блок - Способности -->
+        <a name="skills"></a>
+        <!-- END - Ссылка на блок - Способности -->
+
+        <!-- Блок - способностей -->
+        <section class="section__skills">
+            <div class="section__skills-container">
+                <div class="section__skills-block wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="section__skills-block-item" data-percent="65">65%</div>
+                    <h2>Html</h2>
+                </div>
+                <div class="section__skills-block wow fadeInUp" data-wow-delay="1s">
+                    <div class="section__skills-block-item" data-percent="50">50%</div>
+                    <h2>Css</h2>
+                </div>
+                <div class="section__skills-block wow fadeInUp" data-wow-delay="1.2s">
+                    <div class="section__skills-block-item" data-percent="20">20%</div>
+                    <h2>PHP</h2>
+                </div>
+                <div class="section__skills-block wow fadeInUp" data-wow-delay="1.4s">
+                    <div class="section__skills-block-item" data-percent="11">11%</div>
+                    <h2>JavaScript</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="section__skills-text wow fadeInUp" data-wow-delay="0.8s">
+                    <p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus itaque voluptatibus, consequuntur expedita beatae ipsam dolorum vero molestias inventore eveniet consequatur dignissimos deleniti nam voluptates doloribus blanditiis esse nobis culpa explicabo rem odit, nisi iste. Dolores debitis iste neque explicabo consequatur. Alias nam modi odit debitis sint, dolor repellat.</p>
+                </div>
+                <div class="hr wow slideInRight" data-wow-delay="0.8s"></div>
+                <div class="section__skills-link wow fadeInUp" data-wow-delay="0.8s">
+                    <a href="https://myrusakov.ru/tests.html">
+                        <p class="section__skills-links">Html</p>
+                    </a>
+                    <a href="https://myrusakov.ru/tests.html">
+                        <p class="section__skills-links">Css</p>
+                    </a>
+                    <a href="https://myrusakov.ru/tests.html">
+                        <p class="section__skills-links">PHP</p>
+                    </a>
+                    <a href="https://myrusakov.ru/tests.html">
+                        <p class="section__skills-links">JavaScript</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- END - Блок - способностей -->
+
+        <!-- Переходный блок к блок - с линиями -->
+        <section class="section__transition__line">
+            <div class="hr wow slideInRight" data-wow-delay="0.8s"></div>
+            <div class="container">
+                <div class="section__transition__line-container">
+                    <div class="section__transition__line-container-nubmer wow fadeInUp" data-wow-delay="0.5s">
+                        <p class="section__transition__line-container-number-item">03</p>
+                    </div>
+                    <div class="section__transition__line-container-title wow fadeInUp" data-wow-delay="0.8s">
+                        <p class="section__transition__line-container-title-item">Работы</p>
+                    </div>
+                    <div class="section__transition__line-container-text wow fadeInUp" data-wow-delay="1.1s">
+                        <p class="section__transition__line-container-text-item">В данном блоке приведены проекты, которые были сделали автором или он принимал участие в их создание</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hr wow slideInRight" data-wow-delay="0.8s"></div>
+        </section>
+        <!-- END - Переходный блок к блок - с линиями -->
+
+        <!-- Ссылка на блок - Работы -->
+        <a name="work"></a>
+        <!-- END - Ссылка на блок - Работы -->
+
+        <!-- Блок Работы -->
+        <section class="section__work">
+            <div class="section__work-container">
+                <a href="http://kursyweb.ru/2020-2/project7/index.php">
+                    <div class="section__work-blocks wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="section__work-blocks__1 text__1">
+                            <div>
+                                три <span>дамы</span> - три <span>дамы</span> - три <span>дамы</span> - три <span>дамы</span> - три <span>дамы</span> - три <span>дамы</span>
+                            </div>
+                        </div>
+                        <div class="section__work-blocks__2 text__2">
+                            <div>
+                                last <span>- project </span>last <span>- project </span>last <span>- project </span>last <span>- project </span>last <span>- project </span>last <span>- project </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="section__work-description">
+                <div class="section__work-description-container wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="section__work-description-icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+                    <div class="section__work-description-content">
+                        <h3>Hello!</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quo esse impedit perferendis, harum maxime.</p>
+                    </div>
+                </div>
+                <div class="section__work-description-container wow fadeInUp" data-wow-delay="1s">
+                    <div class="section__work-description-icon"><i class="fa fa-users" aria-hidden="true"></i></i></div>
+                    <div class="section__work-description-content">
+                        <h3>Hello!</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quo esse impedit perferendis, harum maxime.</p>
+                    </div>
+                </div>
+                <div class="section__work-description-container wow fadeInUp" data-wow-delay="1.2s">
+                    <div class="section__work-description-icon"><i class="fa fa-book" aria-hidden="true"></i></i></i></div>
+                    <div class="section__work-description-content">
+                        <h3>Hello!</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quo esse impedit perferendis, harum maxime.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="section__work-title wow fadeInUp" data-wow-delay="0.8s">
+                    <h2 class="section__work-title-item">Работы</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="swiper-container wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper__block">
+                                <img class="swiper__block-images" src="images/work/banner.png" alt="">
+                            </div>
+                            <div class="swiper__block">
+                                <h2 class="swiper__block-title">...</h2>
+                            </div>
+                            <div class="swiper__block">
+                                <p class="swiper__block-text">...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__block">
+                                <img class="swiper__block-images" src="images/work/banner.png" alt="">
+                            </div>
+                            <div class="swiper__block">
+                                <h2 class="swiper__block-title">...</h2>
+                            </div>
+                            <div class="swiper__block">
+                                <p class="swiper__block-text">...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__block">
+                                <img class="swiper__block-images" src="images/work/banner.png" alt="">
+                            </div>
+                            <div class="swiper__block">
+                                <h2 class="swiper__block-title">...</h2>
+                            </div>
+                            <div class="swiper__block">
+                                <p class="swiper__block-text">...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__block">
+                                <img class="swiper__block-images" src="images/work/banner.png" alt="">
+                            </div>
+                            <div class="swiper__block">
+                                <h2 class="swiper__block-title">...</h2>
+                            </div>
+                            <div class="swiper__block">
+                                <p class="swiper__block-text">...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__block">
+                                <img class="swiper__block-images" src="images/work/banner.png" alt="">
+                            </div>
+                            <div class="swiper__block">
+                                <h2 class="swiper__block-title">...</h2>
+                            </div>
+                            <div class="swiper__block">
+                                <p class="swiper__block-text">...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__block">
+                                <img class="swiper__block-images" src="images/work/banner.png" alt="">
+                            </div>
+                            <div class="swiper__block">
+                                <h2 class="swiper__block-title">...</h2>
+                            </div>
+                            <div class="swiper__block">
+                                <p class="swiper__block-text">...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__block">
+                                <img class="swiper__block-images" src="images/work/banner.png" alt="">
+                            </div>
+                            <div class="swiper__block">
+                                <h2 class="swiper__block-title">...</h2>
+                            </div>
+                            <div class="swiper__block">
+                                <p class="swiper__block-text">...</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper__block">
+                                <img class="swiper__block-images" src="images/work/banner.png" alt="">
+                            </div>
+                            <div class="swiper__block">
+                                <h2 class="swiper__block-title">...</h2>
+                            </div>
+                            <div class="swiper__block">
+                                <p class="swiper__block-text">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="swiper-control wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <!-- END - Блок Работы -->
+
+        <!-- Переходный блок к блок - с белым фоном -->
+        <section class="section__transition__white">
+            <div class="container">
+                <div class="section__transition__white-container">
+                    <div class="section__transition__white-container-nubmer wow fadeInUp" data-wow-delay="0.5s">
+                        <p class="section__transition__white-container-number-item">04</p>
+                    </div>
+                    <div class="section__transition__white-container-title wow fadeInUp" data-wow-delay="0.8s">
+                        <p class="section__transition__white-container-title-item">Связь</p>
+                    </div>
+                    <div class="section__transition__white-container-text wow fadeInUp" data-wow-delay="1.1s">
+                        <p class="section__transition__white-container-text-item">В этом блоке вы можете связаться с автором данной работы</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END - Переходный блок к блок - с белым фоном -->
+
+        <!-- Ссылка на блок - Контакты -->
+        <a name="contact"></a>
+        <!-- END - Ссылка на блок - Контакты -->
+
+        <!-- Блок - контакты -->
+        <section class="section__contact">
+            <div class="section__contact-container">
+                <form id="form" action="public/mail.php" method="POST">
+                    <h2 class="wow fadeInUp" data-wow-delay="0.8s">Отправить сообщение</h2>
+                    <div class="section__contact-block">
+                        <div class="section__contact-block-item wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="section__contact-block-wrapper">
+                                <input class="_req _email" type="text" name="user_email" required="required">
+                                <span class="section__contact-block-text">Почта</span>
+                                <span class="section__contact-block-line"></span>
+                            </div>
+                        </div>
+                        <div class="section__contact-block-item wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="section__contact-block-wrapper">
+                                <input class="_req"type="text" name="user_name" required="required">
+                                <span class="section__contact-block-text">Имя</span>
+                                <span class="section__contact-block-line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__contact-block">
+                        <div class="section__contact-block-item wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="section__contact-block-wrapper textarea">
+                                <textarea class="" required="required" name="user_message"></textarea>
+                                <span class="section__contact-block-text">Сообщение</span>
+                                <span class="section__contact-block-line"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__contact-block">
+                        <div class="section__contact-block-item wow fadeInUp" data-wow-delay="0.8s">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- END - Блок - контакты -->
+
+        <!-- Подвал -->
+        <section class="section__footer">
+            <div class="container">
+                <div class="section__footer-title">
+                    <div class="section__footer-title-item">
+                        <p class="wow fadeInUp"><a href="https://github.com/kah3vich/Project-Portfolio/blob/master/README.md">Do you want to know more? click on me.</a></p>
+                    </div>
+                </div>
+                <div class="section__footer-hr wow slideInRight" data-wow-delay="0.8s"></div>
+                <div class="section__footer-info">
+                    <div class="item">
+                        <p class="section__footer-info-title wow fadeInUp">my name</p>
+                        <h4 class="wow fadeInUp" data-wow-delay="0.2s">kahevich</h4>
+                    </div>
+                    <div class="section__footer-info-item">
+                        <p class="section__footer-info-title wow fadeInUp" data-wow-delay="0s">contact</p>
+                            <ul class="section__footer-info-list">
+                                <li class="wow fadeInUp" data-wow-delay="0.2s">
+                                    <a href="https://vk.com">
+                                        <i class="fa fa-vk" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="wow fadeInUp" data-wow-delay="0.5s">
+                                    <a href="https://github.com/kah3vich">
+                                        <i class="fa fa-gitlab" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="wow fadeInUp" data-wow-delay="0.8s">
+                                    <a href="https://gitlab.com/kah3vich">
+                                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="section__footer-contact-item">
+                        <p class="section__footer-contact-title wow fadeInUp" data-wow-delay="0s">email</p>
+                        <h4 class="wow fadeInUp" data-wow-delay="0.2s">bot.circle@mail.ru</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END - Подвал -->
+        
+    </div>
+    <!-- END - Оболочка всего сайта -->
+
+    <!-- Свои скрипты -->
+    <script src="js/script.js"></script>
+    <!-- END - Свои скрипты -->
+
+</body>
+</html>

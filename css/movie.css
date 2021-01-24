@@ -1,0 +1,402 @@
+
+/* ! ---------------------------------------
+! Дополнительная страница - calisthenice   
+! ---------------------------------------- */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+*::-webkit-scrollbar {
+    width: 5px;
+    background-color: #000;
+    display: none;
+}
+  *::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 5px;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #000;
+}
+a {
+    text-decoration: none;
+    color: grey;
+}
+a::hover {
+    color: #fff;
+}
+
+/* ! ----------------------------------------------------------------- */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #000;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/*! Иконки */
+
+.fa-github-square {
+    color: #fff;
+    font-size: 27px;
+    transform: translateX(3px);
+}
+.fa-gitlab {
+    color: #fff;
+    font-size: 27px;
+}
+.fa-vk {
+    color: #fff;
+    font-size: 27px;
+}
+.fa-bars {
+    color: #fff;
+    font-size: 28px;
+}
+.fa-times {
+    color: #fff;
+    font-size: 28px;
+}
+/* ! ----------------------------------------------------------------- */
+
+/* ! ---------------------------------------
+! Главный страница - index  
+! ---------------------------------------- */
+
+/*! Главный блок */
+.section__main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+}
+.section__main-logo {
+    width: 100%;
+    position: fixed;
+    height: 83px;
+    background-color: #000;
+    z-index: 1;
+}
+
+  /*! Логотип - главного блока */
+.section__main-logo-wrapper {
+    position: fixed;
+    margin: 2em;
+    color: white;
+    font-style: 16px;
+    padding: 0 0 0 10px;
+}
+.logos-title {
+    color: red;
+    margin: 0;
+    font-size: 16px;
+}
+#logos  {
+    color: #fff;
+    font-family: Helvetica;
+    font-weight: 100;
+    font-size: 9px;
+}
+.logos {
+    animation: logo 20s linear infinite;
+    position: absolute;
+    top: -23px;
+    z-index: -1;
+}
+@keyframes logo  {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+  /*! Меню - главного блока */
+.menu-open {
+    position: absolute;
+    margin: 30px 30px 0 0;
+    right: 0;
+    cursor: pointer;
+}
+.menu-close {
+    position: absolute;
+    margin: 28px 30px 0 0;;
+    right: 0;
+    cursor: pointer;
+}
+.section__main-menu {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    right: -50%;
+    z-index: 2;
+    background: #000;
+    border-left: 2px solid #fff;
+}
+.menu-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.menu-links .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin: 4px 0;
+    padding: 30px 0 16px 0;
+}
+.menu-links .link a {
+    font-size: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.section__main-menu-icons {
+    position: fixed;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    padding-left: 21%;
+}
+.section__main-menu-icons .link a {
+    margin: 20px;
+    color: black;
+}
+.menu-link-1:hover,
+.menu-link-2:hover,
+.menu-link-3:hover,
+.menu-link-4:hover {
+    text-decoration: line-through;
+}
+.section__main-menu-title {
+    margin-top: 20px;
+    position: absolute;
+    left: 0;
+    top: 28em;
+    transform: rotate(270deg);
+    color: red;
+    cursor: not-allowed;
+}
+@media (max-width: 900px) {
+    .section__main-menu {
+        width: 100%;
+        right: -100%;
+    }
+    .brand-logo {
+        width: 100%;
+    }
+    .menu-links .link a {
+        font-size: 24px;
+        padding: 10px 0 16px 0;
+    }
+    .menu-links .menu-link-1 a::after,
+    .menu-links .menu-link-2 a::after,
+    .menu-links .menu-link-3 a::after,
+    .menu-links .menu-link-4 a::after {
+        display: none;
+    }
+}
+
+/* ! Блок с кругом и текстом */
+.section__main-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+@keyframes fade_move_down {
+    0% {
+            transform: translate(0, -20px) rotate(45deg);
+            opacity: 0;
+    }
+    70% {
+            opacity: 1;
+    }
+    100% {
+            transform: translate(0, 20px) rotate(45deg);
+            opacity: 0;
+    }
+}
+
+    /*! Центральный круг */ 
+.section__main-title-container__circle {
+    font-size: 24px;
+    transition: 0.5s ease-out;
+    color: #fff;
+}
+.section__main-title-container {
+    position: absolute;
+    top: -65%;
+    left: 50%;
+    z-index: -1;
+}
+
+  /*! текст */
+.section__main-title h2 {
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: uppercase !important;
+    color: red;
+}
+
+  /*! Блок калистеники - calisthenica */
+.section__hero {
+    padding: 50px 0 30px 0;
+}
+.hr {
+    background: #fff;
+    height: 1.2px;
+}
+.section__hero-description {
+    margin: 60px 0 40px 0;
+    font-weight: 300;
+    line-height: 36px;
+    color: grey;
+}
+.section__hero-images {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.section__hero-images-image__1 {
+    position: absolute;
+    width: 65%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.section__hero-images-image__2 {
+    position: absolute;
+    width: 65%;
+    top: 20%;
+    right: 0;
+}
+.section__hero-title {
+    padding: 30px 0;
+    color: #fff;
+    font-weight: 500;
+    line-height: 36px;
+}
+.section__hero-container-image {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.section__hero-container-images {
+    width: 70%;
+}
+.section__hero-container {
+    width: 100%;
+    padding: 30px 0;
+}
+.section__hero-container-text {
+    font-weight: 300;
+    line-height: 36px;
+    color: grey;
+}
+
+
+  /*! Подвал */
+.section__footer {
+    background-color: #000;
+    padding-bottom: 30px;
+}
+.section__footer-title {
+    text-align: left;
+    width: 100%;
+    padding: 20px 0;
+}
+.section__footer-title p {
+    font-weight: lighter !important;
+}
+.section__footer-hr {
+    background: #fff;
+    height: 1.2px;
+}
+.section__footer-info {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.section__footer-info h4 {
+    font-size: 18px;
+    font-weight: lighter;
+    color: gray;
+}
+.section__footer-info p {
+    color: #fff;
+    font-weight: lighter;
+}
+.section__footer-info li {
+    font-weight: lighter;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.section__footer-info li:nth-child(1) {
+    padding-left: 0;
+}
+.section__footer-info-title,
+.section__footer-contact-title {
+    padding-bottom: 20px;
+}
+.section__footer-info-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+@media(max-width: 768px) {
+    .section__footer-title {
+        text-align: center;
+    }
+
+    .section__footer-info ul {
+        margin: 0 0 0 -22px;
+        padding: 0;
+    }
+}
+
