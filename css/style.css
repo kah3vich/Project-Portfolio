@@ -867,8 +867,9 @@ a::hover {
 .section__skills-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 100%;
-  padding: 60px 15px 30px 15px;
+  padding: 75px 15px 30px 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -878,13 +879,23 @@ a::hover {
   }
 }
 .section__skills-container .section__skills-block {
-    width: 25%;
+    width: 75%;
     float: left;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .section__skills-container .section__skills-block h2 {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 30px 15px 0 0;
+}
+.section__skills-container .section__skills-block p {
+  color: gray;
+  padding: 60px 0 0 30px;
+  width: 450px;
 }
 .section__skills-container .section__skills-block .section__skills-block-item {
     position: relative;

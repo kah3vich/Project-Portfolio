@@ -20,6 +20,32 @@ $("html,body").animate({scrollTop:0},500);
 /* Анимация круга в логотипе */
 const circleType = new CircleType(document.getElementById("logos"));
 
+/* Анимация шапки ( + она появляется всегда, а не при скролле на указанный блок ) */
+TweenMax.from(".section__main-logo", 1.2, {
+    y: 20,
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: 0
+});
+TweenMax.from(".hr", 1.8, {
+    y: 20,
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: 0
+});
+TweenMax.from(".section__main-button-container", 1.8, {
+    y: 20,
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: 0
+});
+TweenMax.from(".section__main-text", 1.8, {
+    y: 20,
+    opacity: 0,
+    ease: Expo.easeInOut,
+    delay: 0
+});
+
 /* Анимация в центре страницы */
 const circle = new CircleType(
 document.getElementById("circle")
@@ -38,10 +64,4 @@ $(window).scroll(function() {
     });
 });
 
-/* Анимация шапки ( + она появляется всегда, а не при скролле на указанный блок ) */
-TweenMax.from(".section__main-logo", 1.2, {
-    y: 20,
-    opacity: 0,
-    ease: Expo.easeInOut,
-    delay: 0
-});
+
