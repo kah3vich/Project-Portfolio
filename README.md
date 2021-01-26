@@ -36,14 +36,9 @@ $(function() {
 ## 2. Иконки
 ![icons](readme/icons.png)
 ### Для его работы потребуется :
-- ##### Библиотека c иконками [Font Awesome 4.7](https://fontawesome.com/v4.7.0/get-started/)
+- ##### Библиотека c иконками [Font Awesome 4.7](https://fontawesome.com)
 #### Код :
-- ##### Подключаем
-HTML :
-```
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-```
-- ##### Переходи на их [сайт](https://fontawesome.com/v4.7.0/icons/) и ищем нужную иконку по названиям
+- ##### Переходи на их [сайт](https://fontawesome.com) и ищем нужную иконку по названиям, и подключаем
 HTML :
 ```
 <i class="fa fa-github" aria-hidden="true"></i>
