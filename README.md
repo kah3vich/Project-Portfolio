@@ -489,3 +489,4 @@ CSS :
 | Giphy | Используется для создание gif | [🐰](https://giphy.com) |
 | Squoosh | Используется для сжатия фото | [🦝](https://squoosh.app) |
 | Pixelplus | Различные смайлики | [🦄](https://pixelplus.ru/samostoyatelno/stati/vnutrennie-faktory/tablica-simvolov-unicode.html) |
+| FontaWesome | Различные иконки | [🦜](https://fontawesome.com)

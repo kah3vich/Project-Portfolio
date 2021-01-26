@@ -81,6 +81,11 @@ a::hover {
   color: #fff;
   font-size: 28px;
 }
+.fa-git-alt,
+.fa-gulp,
+.fa-sass {
+  font-size: 30px;
+}
 
 
 /* ! ---------------------------------------
