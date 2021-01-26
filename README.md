@@ -36,7 +36,7 @@ $(function() {
 ## 2. Иконки
 ![icons](readme/icons.png)
 ### Для его работы потребуется :
-- ##### Библиотека c иконками [Font Awesome 4.7](https://fontawesome.com)
+- ##### Библиотека c иконками [Font Awesome](https://fontawesome.com)
 #### Код :
 - ##### Переходи на их [сайт](https://fontawesome.com) и ищем нужную иконку по названиям, и подключаем
 HTML :
@@ -484,4 +484,4 @@ CSS :
 | Giphy | Используется для создание gif | [🐰](https://giphy.com) |
 | Squoosh | Используется для сжатия фото | [🦝](https://squoosh.app) |
 | Pixelplus | Различные смайлики | [🦄](https://pixelplus.ru/samostoyatelno/stati/vnutrennie-faktory/tablica-simvolov-unicode.html) |
-| FontaWesome | Различные иконки | [🦜](https://fontawesome.com)
+| Font Awesome | Различные иконки | [🦜](https://fontawesome.com)
