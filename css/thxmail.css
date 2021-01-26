@@ -58,10 +58,9 @@ a::hover {
 
 /*! Иконки */
 
-.fa-github-square {
+.fa-github {
   color: #fff;
   font-size: 27px;
-  transform: translateX(3px);
 }
 .fa-gitlab {
   color: #fff;

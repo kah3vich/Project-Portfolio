@@ -17,6 +17,9 @@
   background-color: #c1c1c1;
   border-radius: 5px;
 }
+*::selection {
+  background-color: red;
+}
 html,
 body {
   margin: 0;
@@ -60,10 +63,9 @@ a::hover {
 
 /*! Иконки */
 
-.fa-github-square {
+.fa-github {
   color: #fff;
   font-size: 27px;
-  transform: translateX(3px);
 }
 .fa-gitlab {
   color: #fff;
@@ -146,13 +148,13 @@ a::hover {
 /*! Меню - главного блока */
 .menu-open {
   position: absolute;
-  margin: 30px 30px 0 0;
+  margin: 25px 30px 0 0;
   right: 0;
   cursor: pointer;
 }
 .menu-close {
   position: absolute;
-  margin: 28px 30px 0 0;
+  margin: 25px 33px 0 0;
   right: 0;
   cursor: pointer;
 }
