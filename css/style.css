@@ -212,7 +212,8 @@ a::hover {
   margin-top: 20px;
   position: absolute;
   left: 0;
-  top: 28em;
+  /* top: 28em; */
+  top: 47.5%;
   transform: rotate(270deg);
   color: red;
   cursor: not-allowed;
@@ -663,7 +664,7 @@ a::hover {
   }
 }
 .section__work-blocks__1.text__1 {
-  transform: rotate(-30deg) translateX(-200px) translateY(630px);
+  transform: rotate(-30deg) translateX(-200px) translateY(650px);
 }
 .section__work-blocks__2.text__2 {
   transform: rotate(26deg) translateX(10px) translateY(-39px);
@@ -698,7 +699,6 @@ a::hover {
   height: 100%;
   background: #000;
   transition: all .5s ease-in-out;
-  z-index: 1;
 }
 .section__work-description .section__work-description-container:hover .section__work-description-icon {
   top: 20px;
@@ -856,7 +856,8 @@ a::hover {
   margin-left: auto;
 }
 .section__skills-container .section__skills-block {
-    width: 75%;
+    /* width: 75%; */
+    width: 100%;
     float: left;
     padding: 25px 0;
     display: flex;
@@ -864,21 +865,21 @@ a::hover {
     align-items: flex-start;
 }
 .section__skills-container .section__skills-block h2 {
+  width: 70px;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  padding: 30px 15px 0 0;
 }
 .section__skills-container .section__skills-block p {
   color: gray;
-  padding: 60px 0 0 30px;
+  padding: 40px 0 0 30px;
   width: 450px;
 }
 .section__skills-container .section__skills-block .section__skills-block-item {
     position: relative;
     width: 180px;
     height: 180px;
-    margin: 0 auto 19px;
+    margin: 0 10%;
     text-align: center;
     font-size: 40px;
     line-height: 180px;
@@ -1084,34 +1085,25 @@ input[type="submit"]:hover {
   justify-content: space-around;
 }
 
-/*!------------ 1280px ------------*/
-@media(max-width: 1280px) {
+/*!------------ Адаптация -------------- */
 
-}
-
-/* ! ----------------------------------------------------------- */ 
-
-@media(max-width: 768px) {
-  .section__footer-title {
-    text-align: center;
-  }
-
-  .section__footer-info ul {
-    margin: 0 0 0 -22px;
-    padding: 0;
-  }
-}
+/*!------------ 1200px ------------*/
 @media (min-width: 1200px) {
   .section__contact-container {
     max-width: 1140px;
   }
-}
-@media (min-width: 1200px) {
   .section__skills-container {
     max-width: 1140px;
   }
+  .container {
+    max-width: 1140px;
+  }
 }
+
+/*!------------ 900px ------------*/
 @media (max-width: 900px) {
+
+  /*! Бургер меню */
   .section__main-menu {
     width: 100%;
     right: -100%;
@@ -1119,6 +1111,8 @@ input[type="submit"]:hover {
   .section__main-menu-icons {
     display: none;
   }
+
+  /*! Главный блок */
   .section__main-title-circle {
     display: none;
   }
@@ -1136,9 +1130,143 @@ input[type="submit"]:hover {
   .menu-links .menu-link-5 a::after {
     display: none;
   }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
+  .section__transition__white-container-text {
+    display: none;
+  }
+  .section__transition__white-container {
+    justify-content: space-evenly;
+  }
+  .section__transition__line-container-text {
+    display: none;
+  }
+  .section__transition__line-container {
+    justify-content: space-evenly;
+  }
+  .section__skills-block {
+    flex-direction: column;
+  }
+  .section__skills-container .section__skills-block {
+    align-items: center;
+  }
+  .section__skills-container .section__skills-block h2 {
+    padding-top: 35px;
+  }
+  .section__skills-text {
+    display: flex;
+    justify-content: center;
+  }
+  .section__skills-text .skills__text {
+    width: 80%;
+    font-size: 16px;
+  }
+  .section__work-blocks__1.text__1 {
+    display: none;
+  }
+  .section__work-blocks__2.text__2 {
+    display: none;
+  }
+  .section__work-description {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .section__work-description {
+    background-size: cover;
+  }
+  .section__footer-name-item {
+    padding: 0 0 25px 0;
+  }
+  .section__footer-info-list {
+    justify-content: flex-start;
+    padding: 0 0 25px 0;
+  }
+  .section__footer-info-title {
+    padding: 0 0 5px 0;
+  }
+  .section__footer-contact-title {
+    padding: 0 0 5px 0;
+  }
+  .section__live-calisthenica-block {
+    width: 45%;
+  }
+  .section__live-movie-block {
+    width: 45%;
+  }
+  .section__live-music-block {
+    width: 45%;
+  }
+  .section__live-music-block::before {
+    left: 35%;
+  }
+  .section__live-programming-block {
+    width: 45%;
   }
 }
+
+/*!------------ 760px ------------*/
+@media(max-width: 760px) {
+  .section__footer-title {
+    text-align: center;
+  }
+  .section__live-calisthenica-block {
+    width: 65%;
+    overflow: hidden;
+  }
+  .section__live-calisthenica-block::before {
+    display: none;
+  }
+  .section__live-movie-block {
+    width: 55%;
+    overflow: hidden;
+  }
+  .section__live-movie-block::before {
+    display: none;
+  }
+  .section__live-music-block {
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__live-music-block::before {
+    display: none;
+  }
+  .section__live-programming-block {
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__live-programming-block::before {
+    display: none;
+  }
+}
+
+
+/*!------------ 460px ------------*/
+@media(max-width: 460px) {
+  .section__footer-info {
+    flex-direction: column;
+  }
+  .section__live-calisthenica-block {
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__live-movie-block {
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__live-music-block {
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__live-programming-block {
+    width: 100%;
+    overflow: hidden;
+  }
+  .section__live-calisthenica,
+  .section__live-movie,
+  .section__live-music,
+  .section__live-programming {
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+/*! ----------------------------------------------------------- */ 

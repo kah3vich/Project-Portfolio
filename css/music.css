@@ -41,11 +41,7 @@ a::hover {
     margin-left: auto;
     background: #000;
 }
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
+
 /*! Иконки */
 
 .fa-github {
@@ -195,30 +191,13 @@ a::hover {
     margin-top: 20px;
     position: absolute;
     left: 0;
-    top: 28em;
+    /* top: 28em; */
+    top: 47.5%;
     transform: rotate(270deg);
     color: red;
     cursor: not-allowed;
 }
-@media (max-width: 900px) {
-    .section__main-menu {
-        width: 100%;
-        right: -100%;
-    }
-    .brand-logo {
-        width: 100%;
-    }
-    .menu-links .link a {
-        font-size: 24px;
-        padding: 10px 0 16px 0;
-    }
-    .menu-links .menu-link-1 a::after,
-    .menu-links .menu-link-2 a::after,
-    .menu-links .menu-link-3 a::after,
-    .menu-links .menu-link-4 a::after {
-        display: none;
-    }
-}
+
 
 /* ! Блок с кругом и текстом */
 .section__main-title {
@@ -303,7 +282,6 @@ a::hover {
     width: 65%;
     top: 0;
     left: 0;
-    z-index: 1;
 }
 .section__hero-images-image__2 {
     position: absolute;
@@ -388,13 +366,116 @@ a::hover {
     display: flex;
     justify-content: space-around;
 }
-@media(max-width: 768px) {
+
+/*!------------ Адаптация -------------- */
+
+/*!------------ 1200px ------------*/
+@media (min-width: 1200px) {
+    .section__contact-container {
+        max-width: 1140px;
+    }
+    .container {
+        max-width: 1140px;
+    }
+    }
+    @media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/*!------------ 900px ------------*/
+@media (max-width: 900px) {
+
+/*! Бургер меню */
+    .section__main-menu {
+        width: 100%;
+        right: -100%;
+    }
+    .section__main-menu-icons {
+        display: none;
+    }
+
+    /*! Главный блок */
+    .section__main-title-circle {
+        display: none;
+    }
+    .brand-logo {
+        width: 100%;
+    }
+    .menu-links .link a {
+        font-size: 24px;
+        padding: 10px 0 16px 0;
+    }
+    .menu-links .menu-link-1 a::after,
+    .menu-links .menu-link-2 a::after,
+    .menu-links .menu-link-3 a::after,
+    .menu-links .menu-link-4 a::after,
+    .menu-links .menu-link-5 a::after {
+        display: none;
+    }
+    .section__footer-name-item {
+        padding: 0 0 25px 0;
+    }
+    .section__footer-info-list {
+        justify-content: flex-start;
+        padding: 0 0 25px 0;
+    }
+    .section__footer-info-title {
+        padding: 0 0 5px 0;
+    }
+    .section__footer-contact-title {
+        padding: 0 0 5px 0;
+    }
+}
+@media (max-width: 900px) {
+    .section__main-menu {
+        width: 100%;
+        right: -100%;
+    }
+    .brand-logo {
+        width: 100%;
+    }
+    .menu-links .link a {
+        font-size: 24px;
+        padding: 10px 0 16px 0;
+    }
+    .menu-links .menu-link-1 a::after,
+    .menu-links .menu-link-2 a::after,
+    .menu-links .menu-link-3 a::after,
+    .menu-links .menu-link-4 a::after {
+        display: none;
+    }
+}
+
+/*!------------ 760px ------------*/
+@media(max-width: 760px) {
     .section__footer-title {
         text-align: center;
     }
-
-    .section__footer-info ul {
-        margin: 0 0 0 -22px;
-        padding: 0;
+    .section__hero-container-images {
+        width: 100%;
     }
 }
+
+
+/*!------------ 460px ------------*/
+@media(max-width: 460px) {
+    .section__footer-info {
+        flex-direction: column;
+    }
+    .section__hero-images-image__1 {
+        width: 100%;
+    }
+    .section__hero-images-image__2 {
+        display: none;
+    }
+    .section__hero-images {
+        height: 300px;
+    }
+    .section__hero-container-images {
+        width: 100%;
+    }
+}
+
+/*! ----------------------------------------------------------- */ 
