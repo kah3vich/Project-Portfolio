@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 *::-webkit-scrollbar {
     width: 5px;
@@ -27,6 +28,7 @@ body {
 a {
     text-decoration: none;
     color: grey;
+    font-weight: 400;
 }
 a::hover {
     color: #fff;
@@ -101,7 +103,7 @@ a::hover {
 #logos  {
     color: #fff;
     font-family: Helvetica;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 9px;
 }
 .logos {
@@ -251,7 +253,7 @@ a::hover {
 /*! текст */
 .section__main-title h2 {
     font-size: 100px;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase !important;
     color: red;
 }
@@ -280,6 +282,7 @@ a::hover {
     width: 65%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .section__hero-images-image__2 {
     position: absolute;
@@ -339,7 +342,7 @@ a::hover {
 }
 .section__footer-info h4 {
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: 300;
     color: gray;
 }
 .section__footer-info p {
