@@ -7,8 +7,8 @@ wow.init(); // инициализация анимации
 /* Кастомная прокрутка на странице */
 $(function() {  
   $("body").niceScroll({
-    scrollspeed: 9, // скорость прокрутки скролла 
-    mousescrollstep: 9, // скорость прокрутки колесиком мыши 
+    scrollspeed: 8, // скорость прокрутки скролла 
+    mousescrollstep: 8, // скорость прокрутки колесиком мыши 
     cursorcolor: "transparent", // цвет скролла 
     cursorborder: "1px solid transparent", // обводка скролла 
   });

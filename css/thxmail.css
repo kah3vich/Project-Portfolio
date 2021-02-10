@@ -141,8 +141,8 @@ a::hover {
 
 /*? текст */
 .section__main-title h2 {
-  font-size: 100px;
-  font-weight: 900;
+  font-size: 105px;
+  font-weight: 700;
   text-transform: uppercase !important;
   color: red;
 }
@@ -378,8 +378,8 @@ a::hover {
     top: 25%;
   }
   .section__main-title h2 {
-      position: absolute;
-      top: 120px;
+    position: absolute;
+    top: 120px;
     font-size: 85px;
   }
   .section__hero-container-images {

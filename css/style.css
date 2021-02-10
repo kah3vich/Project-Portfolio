@@ -1,4 +1,12 @@
 /* ! ---------------------------------------
+! Переменные
+! ---------------------------------------- */
+
+:root {
+  --imp: !important;
+}
+
+/* ! ---------------------------------------
 ! Общие параметры 
 ! ---------------------------------------- */
 
@@ -20,7 +28,7 @@
   transition: all 0.5s ease-in-out;
 }
 *::selection {
-  background-color: red;
+  background-color: red var(--imp);
 }
 html,
 body {
@@ -31,7 +39,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: grey;
+  color: grey var(--imp);
   font-weight: 400;
 }
 a::hover {
@@ -54,7 +62,7 @@ a::hover {
   margin-left: auto;
 }
 .hr {
-  background: #fff;
+  background: #fff var(--imp);
   height: 1.2px;
 }
 
@@ -63,23 +71,23 @@ a::hover {
 /*! Иконки */
 
 .fa-github {
-  color: #fff;
+  color: #fff var(--imp);
   font-size: 27px;
 }
 .fa-gitlab {
-  color: #fff;
+  color: #fff var(--imp);
   font-size: 27px;
 }
 .fa-vk {
-  color: #fff;
+  color: #fff var(--imp);
   font-size: 27px;
 }
 .fa-bars {
-  color: #fff;
+  color: #fff var(--imp);
   font-size: 28px;
 }
 .fa-times {
-  color: #fff;
+  color: #fff var(--imp);
   font-size: 28px;
 }
 .fa-git-alt,
@@ -99,14 +107,14 @@ a::hover {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: #000000;
+  background: #000000 var(--imp);
 }
 .section__main-logo {
   width: 100%;
   position: fixed;
   height: 83px;
-  background-color: #000;
-  z-index: 1;
+  background-color: #000 var(--imp);
+  z-index: 10;
 }
 
 /*! Логотип - главного блока */
@@ -118,7 +126,7 @@ a::hover {
   padding: 0 0 0 10px;
 }
 .logos-title {
-  color: red;
+  color: red var(--imp);
   margin: 0;
   font-size: 16px;
 }
@@ -164,7 +172,7 @@ a::hover {
   /* right: -50%; */
   right: -100vw;
   z-index: 2;
-  background: #000;
+  background: #000 var(--imp);
   border-left: 2px solid #fff;
 }
 .menu-links {
@@ -183,7 +191,7 @@ a::hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: #000 var(--imp);
   margin: 4px 0;
   padding: 30px 0 16px 0;
 }
@@ -192,6 +200,9 @@ a::hover {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
+}
+.section__main-menu {
+  z-index: 25;
 }
 .section__main-menu-icons {
   position: fixed;
@@ -280,12 +291,12 @@ a::hover {
 .section__main-title-wrapper-text::before {
   left: 4px;
   text-shadow: -31px 0 rgb(0, 174, 255);
-  background: black;
+  background: black var(--imp);
 }
 .section__main-title-wrapper-text::after {
   left: -3px;
   text-shadow: -3px 0 blue;
-  background: black;
+  background: black var(--imp);
 }
 .section__main-title-wrapper-text::before {
   clip: rect(54px, 250px, 56px, 40px);
@@ -381,7 +392,7 @@ a::hover {
 
 /*! Переходный блок к блок - с белым фоном */
 .section__transition__white {
-  background-color: #fff;
+  background-color: #fff var(--imp);
 }
 .section__transition__white-container {
   width: 100%;
@@ -422,7 +433,7 @@ a::hover {
 
 /*! Переходный блок к блок - с линиями */
 .section__transition__line {
-  background-color: #000;
+  background-color: #000 var(--imp);
 }
 .section__transition__line-container {
   width: 100%;
@@ -464,7 +475,7 @@ a::hover {
 
 /*! Блок - Об авторе */
 .section__live {
-  background-color: #000;
+  background-color: #000 var(--imp);
   padding: 35px 0 0 0;
 }
 .section__live-indent {
@@ -594,7 +605,7 @@ a::hover {
 .section__work {
   padding: 20px 0;
   width: 100%;
-  background-color: #000;
+  background-color: #000 var(--imp);
 }
 .section__work-container {
   max-width: 1140px;
@@ -611,7 +622,7 @@ a::hover {
 .section__work-blocks {
   background: url(../images/work/3d.jpg) no-repeat;
   background-position: bottom center;
-  background-color: #000;
+  background-color: #000 var(--imp);
   width: 100%;
   height: 700px;
   overflow: hidden;
@@ -623,7 +634,7 @@ a::hover {
 .section__work-blocks__1 div {
   color: #000;
   font-size: 25px;
-  background: #fff;
+  background: #fff var(--imp);
   white-space: nowrap;
   font-weight: 600;
   text-transform: uppercase;
@@ -632,7 +643,7 @@ a::hover {
 .section__work-blocks__2 div {
   color: #000;
   font-size: 25px;
-  background: #fff;
+  background: #fff var(--imp);
   white-space: nowrap;
   font-weight: 600;
   text-transform: uppercase;
@@ -689,12 +700,14 @@ a::hover {
   position: relative;
   width: calc(400px - 30px);
   height: calc(300px - 30px);
-  background: #000;
+  background: #000 var(--imp);
   float: left;
   margin: 15px;
   box-sizing: border-box;
   overflow: hidden;
   border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
 }
 .section__work-description .section__work-description-container .section__work-description-icon {
   position: absolute;
@@ -702,7 +715,7 @@ a::hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #000 var(--imp);
   transition: all .5s ease-in-out;
 }
 .section__work-description .section__work-description-container:hover .section__work-description-icon {
@@ -774,7 +787,7 @@ a::hover {
 }
 .swiper-slide {
   font-size: 18px;
-  background: #000;
+  background: #000 var(--imp);
   border: 1px solid #fff;
   display: flex;
   flex-direction: column;
@@ -791,7 +804,7 @@ a::hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  color: #fff;
+  color: #fff var(--imp);
 }
 .swiper-control {
   position: relative;
@@ -838,7 +851,7 @@ a::hover {
   width: 100%;
   height: 100%;
   text-align: center;
-  color: #fff;
+  color: #fff var(--imp);
 }
 .swiper__block-text {
   width: 100%;
@@ -852,7 +865,7 @@ a::hover {
 .section__skills {
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #000 var(--imp);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -884,7 +897,7 @@ a::hover {
 }
 .section__skills-container .section__skills-block p {
   color: gray;
-  padding: 40px 0 0 30px;
+  padding: 40px 15px 0 30px;
   width: 450px;
 }
 .section__skills-container .section__skills-block .section__skills-block-item {
@@ -908,7 +921,7 @@ a::hover {
 }
 .skills__text {
   font-size: 19px;
-  color: gray;
+  color: gray var(--imp);
   line-height: 28px;
 }
 .section__skills-link {
@@ -919,18 +932,18 @@ a::hover {
   justify-content: space-around;
 }
 .section__skills-links {
-  color: gray;
+  color: gray var(--imp);
   transition: all .5s ease-in-out;
   font-size: 19px;
   line-height: 28px;
 }
 .section__skills-links:hover {
-  color: #fff;
+  color: #fff var(--imp);
 }
 
 /*! Блок - контакты */
 .section__contact {
-  background: #000;
+  background: #000 var(--imp);
 }
 .section__contact-container {
   width: 100%;
@@ -1000,7 +1013,7 @@ a::hover {
     display: block;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #fff var(--imp);
     transition: all .5s ease-in-out;
     border-radius: 2px;
     pointer-events: none;
@@ -1033,21 +1046,21 @@ input[type="submit"] {
     padding: 7px 35px;
     cursor: pointer;
     outline: none;
-    background: #fff;
+    background: #fff var(--imp);
     color: #000;
     font-size: 18px;
     border-radius: 2px;
-    background: gray;
+    background: gray var(--imp);
     transition: all .5s ease-in-out;
 }
 input[type="submit"]:hover {
-  background: #fff;
+  background: #fff var(--imp);
   transition: all .5s ease-in-out;
 }
 
 /*! Подвал */
 .section__footer {
-  background-color: #000;
+  background-color: #000 var(--imp);
   padding-bottom: 30px;
 }
 .section__footer-title {
@@ -1059,7 +1072,7 @@ input[type="submit"]:hover {
   font-weight: lighter !important;
 }
 .section__footer-hr {
-  background: #fff;
+  background: #fff var(--imp);
   height: 1.2px;
 }
 .section__footer-info {
@@ -1072,15 +1085,15 @@ input[type="submit"]:hover {
 .section__footer-info h4 {
   font-size: 18px;
   font-weight: 300;
-  color: gray;
+  color: gray var(--imp);
 }
 .section__footer-info p {
-  color: #fff;
+  color: #fff var(--imp);
   font-weight: lighter;
 }
 .section__footer-info li {
   font-weight: lighter;
-  color: #fff;
+  color: #fff var(--imp);
   font-size: 18px;
   padding-left: 20px;
 }
