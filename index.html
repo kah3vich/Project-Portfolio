@@ -52,6 +52,9 @@
     <!-- <script src="add/jquery.easypiechart.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
 
+
+    <link rel="stylesheet" href="add/sweetalert2 7.12.15.css">
+    <script src="add/sweetalert2 7.12.15.js"></script>
     <!-- Основные стили -->
     <link rel="stylesheet" href="css/style.css">
     
@@ -490,7 +493,7 @@
         <!-- Блок - контакты -->
         <section class="section__contact">
             <div class="section__contact-container">
-                <form id="form" action="public/mail.php" method="POST">
+                <form id="form"  method="POST" action="" onsubmit="return formMessages()">
                     <h2 class="wow fadeInUp" data-wow-delay="0.8s">Отправить сообщение</h2>
                     <div class="section__contact-block">
                         <div class="section__contact-block-item wow fadeInUp" data-wow-delay="0.8s">
@@ -520,6 +523,7 @@
                     <div class="section__contact-block">
                         <div class="section__contact-block-item wow fadeInUp" data-wow-delay="0.8s">
                             <input type="submit" value="Отправить">
+                            
                         </div>
                     </div>
                 </form>
@@ -576,6 +580,13 @@
     <!-- Свои скрипты -->
     <script src="js/script.js"></script>
     <!-- END - Свои скрипты -->
+
+    <script>
+        function formMessages() {
+            swal("Спасибо", "Ваше письмо отправлено!", "success");
+            return false;
+        }
+    </script>
 
 </body>
 </html>
