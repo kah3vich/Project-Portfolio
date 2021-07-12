@@ -54,6 +54,10 @@ a::hover {
 
 ! ----------------------------------------------------------------- */
 
+
+
+
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -1261,6 +1265,12 @@ input[type="submit"]:hover {
   .section__live-programming-block::before {
     display: none;
   }
+  .preloader {
+    display: none;
+  }
+  .done {
+    display: none;
+  }
 }
 
 
@@ -1292,6 +1302,13 @@ input[type="submit"]:hover {
     padding: 0;
     justify-content: center;
   }
+  .preloader {
+    display: none;
+  }
+  .done {
+    display: none;
+  }
 }
+
 
 /*! ----------------------------------------------------------- */ 
