@@ -1,4 +1,4 @@
-# Ссылка на проект : [🐉](https://kah3vich.github.io/Project-Portfolio/)
+# Link to the project : [🐉](https://kah3vich.github.io/Project-Portfolio/)
 
 # Тестирование :
 - #### Opera - ✅
@@ -7,12 +7,12 @@
 - #### Mozilla - ❌
 - #### IE - ❌
 
-# Основный части проекта :
+# The main part of the project :
 
-## 1. Скролл на странице 
-#### Для его работы потребуется :
-- ##### Библиотека [Jquery 3.5.1](https://jquery.com/download/)
-- ##### Библиотека [NiceScroll 3.5.1.jq](https://github.com/inuyaksa/jquery.nicescroll)
+## 1. Scroll on the page 
+#### For its work you will need :
+- ##### Library [Jquery 3.5.1](https://jquery.com/download/)
+- ##### Library [NiceScroll 3.5.1.jq](https://github.com/inuyaksa/jquery.nicescroll)
 
 #### Код :
 HTML :
@@ -31,7 +31,7 @@ $(function() {
   });
 });
 ```
-##### Примечание : в документации к библиотеки [NiceScroll.jq 3.5.1](https://github.com/inuyaksa/jquery.nicescroll) есть множество других параметров, который могут быть вам нужны, я показал лишь нужные мне параметры.
+##### Note: in the documentation for the library [NiceScroll.jq 3.5.1](https://github.com/inuyaksa/jquery.nicescroll) there are many other parameters that you may need, I showed only the parameters I need.
 
 ## 2. Иконки
 ![icons](readme/icons.png)
