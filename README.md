@@ -1,6 +1,6 @@
 # Link to the project : [🐉](https://kah3vich.github.io/Project-Portfolio/)
 
-# Тестирование :
+# Testing :
 - #### Opera - ✅
 - #### Chrome - ✅
 - #### Yandex - ❌
@@ -14,7 +14,7 @@
 - ##### Library [Jquery 3.5.1](https://jquery.com/download/)
 - ##### Library [NiceScroll 3.5.1.jq](https://github.com/inuyaksa/jquery.nicescroll)
 
-#### Код :
+#### Code :
 HTML :
 ```
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -23,42 +23,42 @@ HTML :
 JS :
 ```
 $(function() {  
-  $("body").niceScroll({ // указываем, где будет работать скролл 
-    scrollspeed: 9, // скорость прокрутки скролла 
-    mousescrollstep: 9, // скорость прокрутки колесиком мыши 
-    cursorcolor: "transparent", // цвет скролла 
-    cursorborder: "1px solid transparent", // обводка скролла 
+  $("body").niceScroll({ // indicate where the scroll will work
+    scrollspeed: 9, // scroll speed
+    mousescrollstep: 9, // scroll speed with the mouse wheel
+    cursorcolor: "transparent", // scroll color
+    cursorborder: "1px solid transparent", // scroll outline
   });
 });
 ```
 ##### Note: in the documentation for the library [NiceScroll.jq 3.5.1](https://github.com/inuyaksa/jquery.nicescroll) there are many other parameters that you may need, I showed only the parameters I need.
 
-## 2. Иконки
+## 2. Icons
 ![icons](readme/icons.png)
-### Для его работы потребуется :
-- ##### Библиотека c иконками [Font Awesome](https://fontawesome.com)
-#### Код :
-- ##### Переходи на их [сайт](https://fontawesome.com) и ищем нужную иконку по названиям, и подключаем
+### For its work you will need :
+- ##### Library with icons [Font Awesome](https://fontawesome.com)
+#### Code :
+- ##### Go to them [site](https://fontawesome.com) and look for the desired icon by name, and connect
 HTML :
 ```
 <i class="fa fa-github" aria-hidden="true"></i>
 ```
 
-## 3. Анимация на странице
+## 3. Animation on the page
 ![icons](readme/wow.gif)
-#### В проект было использованы 2 библиотеки для анимации : wow и gsap
+#### The project used 2 libraries for animation: wow and gsap
 ### WOW :
-- ##### Библиотека [WOW 1.0.1.js](https://wowjs.uk)
-- ##### Библиотека [WOW 3.1.0.css ](https://animate.style)
-#### Код :
-- ##### Подключаем
+- ##### libraries [WOW 1.0.1.js](https://wowjs.uk)
+- ##### libraries [WOW 3.1.0.css ](https://animate.style)
+#### Code :
+- ##### We connect
 HTML :
 ```
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
 ```
-- ##### Переходи на их [сайт](https://animate.style) и выбираем анимацию, которую вам нужна 
-- ##### Подключение анимации и задаем задержку анимации ( data-wow-delay="0.8s" )
+- ##### Go to their [site](https://animate.style) and select the animation you need
+- ##### Connect animation and set animation delay (data-wow-delay = "0.8s")
 HTML : обязательно перед названием анимации ставим ключевой класс - wow
 ```
 <div class="block wow fadeInUp" data-wow-delay="0.8s">
@@ -75,7 +75,7 @@ wow.init(); // инициализация анимации
 ### GSAP :
 - ##### Библиотека [Jquery 3.5.1](https://jquery.com/download/)
 - ##### Библиотека [GSAP 3.5.1](https://greensock.com/get-started/)
-#### Код :
+#### Code :
 - ##### Подключаем
 HTML :
 ```
@@ -100,7 +100,7 @@ TweenMax.from(".block", 1.2, {
 ### Для его работы потребуется :
 - ##### Библиотека [Jquery 3.5.1](https://jquery.com/download/)
 - ##### Библиотека [CircleType](https://github.com/peterhry/CircleType)
-#### Код :
+#### Code :
 - ##### Подключаем
 HTML :
 ```
@@ -119,7 +119,7 @@ HTML :
 ```
 ##### Примечание : 
 - в [github](https://github.com/peterhry/CircleType) есть дополнительная информация о параметрах
-- для создания круга, который будет работать при скролле, используется следующий код JS :
+- для создания круга, который будет работать при скролле, используется следующий Code JS :
 ```
 const circle = new CircleType(
 document.getElementById("circle")
@@ -141,8 +141,8 @@ $(window).scroll(function() {
 
 ## 5. Заголовок
 ![icons](readme/title.gif)
-#### Код :
-- ##### Чистый html и css код
+#### Code :
+- ##### Чистый html и css Code
 HTML :
 ```
 <h1 class="section__main-title-wrapper-text" data-text="KAH3VICH">KAH3VICH</h1>
@@ -207,7 +207,7 @@ CSS :
 ### Для его работы потребуется :
 - ##### Библиотека [Jquery 3.5.1](https://jquery.com/download/)
 - ##### Библиотека [GSAP 3.5.1](https://greensock.com/get-started/)
-#### Код :
+#### Code :
 - ##### Подключаем
 ```
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -330,7 +330,7 @@ $(document).on("click", ".menu-close, .link", function () {
 ![alert](readme/alert.png)
 ### Для его работы потребуется :
 - ##### Библиотека [Sweetalert2](https://sweetalert2.github.io)
-#### Код :
+#### Code :
 - ##### Подключаем
 HTML :
 ```
@@ -347,7 +347,7 @@ swal("Спасибо", "Ваше письмо отправлено!", "success")
 ![slider](readme/slider.png)
 ### Для его работы потребуется :
 - ##### Библиотека [Swiper](https://swiperjs.com/get-started/)
-#### Код :
+#### Code :
 - ##### Подключаем
 HTML :
 ```
@@ -415,7 +415,7 @@ var swiper = new Swiper('.swiper-container', { // объявляем слайд�
 
 - ##### Библиотека [Jquery 3.5.1](https://github.com/rendro/easy-pie-chart)
 - ##### Библиотека [Easy-Pie-Chart](https://github.com/rendro/easy-pie-chart)
-#### Код :
+#### Code :
 - ##### Подключаем
 HTML :
 ```
