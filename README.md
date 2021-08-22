@@ -59,31 +59,31 @@ HTML :
 ```
 - ##### Go to their [site](https://animate.style) and select the animation you need
 - ##### Connect animation and set animation delay (data-wow-delay = "0.8s")
-HTML : обязательно перед названием анимации ставим ключевой класс - wow
+HTML : be sure to put the key class before the name of the animation - wow
 ```
 <div class="block wow fadeInUp" data-wow-delay="0.8s">
 ```
-- ##### В js нужно запустить анимацию 
+- ##### In js, you need to run the animation
 JS :
 ```
-var wow = new WOW({ // настроки для анимации 
-  mobile: false, // отключать анимацию на мобильных устройствах ( зависит от размера экрана )
+var wow = new WOW({ // settings for animation
+  mobile: false, // disable animation on mobile devices (depends on screen size)
 });
-wow.init(); // инициализация анимации 
+wow.init(); // animation initialization
 ```
-##### Примечание : в [githab](https://github.com/graingert/wow) есть полный список всех настроек для анимации 
+##### Note: [githab](https://github.com/graingert/wow) has a complete list of all settings for animation
 ### GSAP :
-- ##### Библиотека [Jquery 3.5.1](https://jquery.com/download/)
-- ##### Библиотека [GSAP 3.5.1](https://greensock.com/get-started/)
+- ##### libraries [Jquery 3.5.1](https://jquery.com/download/)
+- ##### libraries [GSAP 3.5.1](https://greensock.com/get-started/)
 #### Code :
-- ##### Подключаем
+- ##### We connect
 HTML :
 ```
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 ```
-- ##### Переходи на их [сайт](https://greensock.com/get-started/#easing) и выбираем анимацию, которую вам нужна 
-- ##### Подключение анимации и задаем ей параметры
+- ##### Go to their [site](https://greensock.com/get-started/#easing) and select the animation you want
+- ##### Connecting animation and setting its parameters
 JS :
 ```
 TweenMax.from(".block", 1.2, {
@@ -93,33 +93,33 @@ TweenMax.from(".block", 1.2, {
   delay: 0
 });
 ```
-##### Примечание : на их [сайте](https://greensock.com/get-started/#callbacks) есть полный список всех настроек для анимации 
+##### Note: their [website](https://greensock.com/get-started/#callbacks) has a complete list of all settings for animation
 
-## 4. Круги из текста
+## 4. Circles from text
 ![logo](readme/logo.gif)
-### Для его работы потребуется :
-- ##### Библиотека [Jquery 3.5.1](https://jquery.com/download/)
-- ##### Библиотека [CircleType](https://github.com/peterhry/CircleType)
+### For its work you will need:
+- ##### libraries [Jquery 3.5.1](https://jquery.com/download/)
+- ##### libraries [CircleType](https://github.com/peterhry/CircleType)
 #### Code :
-- ##### Подключаем
+- ##### We connect
 HTML :
 ```
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://rawgit.com/peterhry/CircleType/master/dist/circletype.min.js"></script>
 ```
-- ##### Инициализируем к определенному блоке 
+- ##### Initializing to a specific block
 JS :
 ```
 const circleType = new CircleType(document.getElementById("block"));
 ```
-- ##### Разметка
+- ##### Markup
 HTML :
 ```
 <h2 class="block" id="block"> test • test • test • test • test • </h2>
 ```
-##### Примечание : 
-- в [github](https://github.com/peterhry/CircleType) есть дополнительная информация о параметрах
-- для создания круга, который будет работать при скролле, используется следующий Code JS :
+##### Note : 
+- in [github](https://github.com/peterhry/CircleType) there is more information about the parameters
+- to create a circle that will work when scrolling, the following JS Code is used:
 ```
 const circle = new CircleType(
 document.getElementById("circle")
@@ -139,10 +139,10 @@ $(window).scroll(function() {
 });
 ```
 
-## 5. Заголовок
+## 5. Heading
 ![icons](readme/title.gif)
 #### Code :
-- ##### Чистый html и css Code
+- ##### Pure html and css Code
 HTML :
 ```
 <h1 class="section__main-title-wrapper-text" data-text="KAH3VICH">KAH3VICH</h1>
@@ -203,49 +203,45 @@ CSS :
 }
 ```
 
-## 6. Меню
-### Для его работы потребуется :
-- ##### Библиотека [Jquery 3.5.1](https://jquery.com/download/)
-- ##### Библиотека [GSAP 3.5.1](https://greensock.com/get-started/)
+## 6. Menu
+### For its work you will need:
+- ##### libraries [Jquery 3.5.1](https://jquery.com/download/)
+- ##### libraries [GSAP 3.5.1](https://greensock.com/get-started/)
 #### Code :
-- ##### Подключаем
+- ##### We connect
 ```
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 ```
 
-- ##### Разметка :
+- ##### Markup :
 HTML :
 ```
-<!-- Кнопка открытия меню -->
 <div class="menu-open">
     <i class="fa fa-bars" aria-hidden="true"></i>
 </div>
 
-<!-- Контент меню -->
 <div class="section__main-menu">
 
-    <!-- Кнопка закрытия меню -->
     <div class="menu-close">
         <i class="fa fa-times" aria-hidden="true"></i>
     </div>
 
-    <!-- Содержимое меню -->
     <div class="menu-links">
         <div class="link menu-link-1">
-            <a href="#home">Главная</a>
+            <a href="#home">Home</a>
         </div>
         <div class="link menu-link-2">
-            <a href="#live">Об авторе</a>
+            <a href="#live">About me</a>
         </div>
         <div class="link menu-link-3">
-            <a href="#skills">Способности</a>
+            <a href="#skills">Skills</a>
         </div>
         <div class="link menu-link-4">
-            <a href="#work">Работы</a>
+            <a href="#work">Work</a>
         </div>
         <div class="link menu-link-5">
-            <a href="#contact">Cвязь</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 </div>
@@ -326,12 +322,12 @@ $(document).on("click", ".menu-close, .link", function () {
 });
 ```
 
-## 7. Выпадающая табличка
+## 7. Dropdown sign
 ![alert](readme/alert.png)
-### Для его работы потребуется :
-- ##### Библиотека [Sweetalert2](https://sweetalert2.github.io)
+### For its work you will need:
+- ##### libraries [Sweetalert2](https://sweetalert2.github.io)
 #### Code :
-- ##### Подключаем
+- ##### We connect
 HTML :
 ```
 <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
@@ -339,22 +335,22 @@ HTML :
 ```
 JS :
 ```
-swal("Спасибо", "Ваше письмо отправлено!", "success");
+swal("Thank you", "Your letter has been sent!", "success");
 ```
-#### Примечание : на их [сайте](https://sweetalert2.github.io) и [github](https://github.com/sweetalert2/sweetalert2), есть дополнительные настройки
+#### Note : on their [site](https://sweetalert2.github.io) and [github](https://github.com/sweetalert2/sweetalert2), there are additional settings
 
-## 8. Слайдер
+## 8. Slider
 ![slider](readme/slider.png)
-### Для его работы потребуется :
-- ##### Библиотека [Swiper](https://swiperjs.com/get-started/)
+### For its work you will need:
+- ##### libraries [Swiper](https://swiperjs.com/get-started/)
 #### Code :
-- ##### Подключаем
+- ##### We connect
 HTML :
 ```
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 ```
-- ##### Разметка в html
+- ##### HTML markup
 HTML : 
 ```
 <div class="swiper-container">
@@ -378,45 +374,45 @@ CSS :
 }
 ```
 
-- ##### Настройка :
+- ##### Setting :
 JS :
 ```
-var swiper = new Swiper('.swiper-container', { // объявляем слайдер 
-  pagination: { // счетчик сладов "1/6"
+var swiper = new Swiper('.swiper-container', { // declare the slider
+  pagination: { // slad counter "1/6"
     el: '.swiper-pagination',
     type: 'fraction',
   },
-  navigation: { // указываем навигацию через стрелочки 
-    nextEl: '.swiper-button-next', // стрелочка - следующий слайд 
-    prevEl: '.swiper-button-prev', // стрелочка - предыдущий слайд
+  navigation: { // indicate navigation through arrows 
+    nextEl: '.swiper-button-next', // arrow - next slide
+    prevEl: '.swiper-button-prev', // arrow - previous slide
   },
-  speed: 700, // скорость прокрутки слайдов 
-  breakpoints: { // адаптация слайдера 
-    1700: { // после размера экрана >1700 сработают указанный параметры 
-        slidesPerView: 3, // количество слайдов, которых будет показываться 
-        spaceBetween: 30, // отступ между слайдами 
+  speed: 700, // slides scroll speed
+  breakpoints: { // slider adaptation
+    1700: { // after screen size> 1700 the specified parameters will work
+        slidesPerView: 3, // number of slides to be shown
+        spaceBetween: 30, // padding between slides
     },
     1200: {
-        slidesPerView: 2, // количество слайдов, которых будет показываться 
-        spaceBetween: 15, // отступ между слайдами 
+        slidesPerView: 2, // number of slides to be shown
+        spaceBetween: 15, // padding between slides
     },
     992: {
-        slidesPerView: 1, // количество слайдов, которых будет показываться 
-        spaceBetween: 5, // отступ между слайдами 
+        slidesPerView: 1, // number of slides to be shown
+        spaceBetween: 5, // padding between slides
     }
   },
 });
 ```
-#### Примечание : на их [сайте](https://swiperjs.com/get-started/) есть полный документация ко всей системе слайдера
+#### Note : their [site](https://swiperjs.com/get-started/) has complete documentation for the entire slider system
 
-## 9. Круг прогресса
+## 9. Circle of progress
 ![progress](readme/progress.png)
-### Для его работы потребуется :
+### For its work you will need:
 
-- ##### Библиотека [Jquery 3.5.1](https://github.com/rendro/easy-pie-chart)
-- ##### Библиотека [Easy-Pie-Chart](https://github.com/rendro/easy-pie-chart)
+- ##### libraries [Jquery 3.5.1](https://github.com/rendro/easy-pie-chart)
+- ##### libraries [Easy-Pie-Chart](https://github.com/rendro/easy-pie-chart)
 #### Code :
-- ##### Подключаем
+- ##### We connect
 HTML :
 ```
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -436,7 +432,7 @@ $(function() {
   });
 });
 ```
-- ##### Разметка
+- ##### Markup
 HTML :
 ```
 div class="block">
@@ -472,16 +468,16 @@ CSS :
     left: 0;
 }
 ```
-#### Примечание : на их [github](https://github.com/rendro/easy-pie-chart), есть дополнительные настройки
+#### Note : on their [github](https://github.com/rendro/easy-pie-chart), there are additional settings
 
 
-# Полезные ссылки
+# useful links
 
-### Данные сервисы были использованы при работе над проектом
+### These services were used when working on the project
 
-| Название | Описание | Ссылки |
+| Name | Description | Link |
 | ------ | ------ | ------ |
-| Giphy | Используется для создание gif | [🐰](https://giphy.com) |
-| Squoosh | Используется для сжатия фото | [🦝](https://squoosh.app) |
-| Pixelplus | Различные смайлики | [🦄](https://pixelplus.ru/samostoyatelno/stati/vnutrennie-faktory/tablica-simvolov-unicode.html) |
-| Font Awesome | Различные иконки | [🦜](https://fontawesome.com)
+| Giphy | Used to create gif | [🐰](https://giphy.com) |
+| Squoosh | Used to compress photos | [🦝](https://squoosh.app) |
+| Pixelplus | Various emoticons | [🦄](https://pixelplus.ru/samostoyatelno/stati/vnutrennie-faktory/tablica-simvolov-unicode.html) |
+| Font Awesome | Various icons | [🦜](https://fontawesome.com)
