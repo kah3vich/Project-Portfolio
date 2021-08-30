@@ -611,6 +611,9 @@ a::hover {
   width: 100%;
   background-color: #000 var(--imp);
 }
+.section__work .container {
+  overflow: hidden;
+}
 .section__work-container {
   max-width: 1140px;
   width: 100%;
@@ -820,13 +823,13 @@ a::hover {
 }
 .swiper-control .swiper-pagination {
   width: 100%;
-  bottom: -5px;
+  bottom: 0;
   color: #fff;
 }
 .swiper-control .swiper-button-next {
   position: absolute;
   right: 0;
-  top: 33px;
+  top: 28px;
 }
 .swiper-control .swiper-button-next::after {
   content: url(../images/work/arrow/arrow-right.png);
@@ -834,7 +837,7 @@ a::hover {
 .swiper-control .swiper-button-prev {
   position: absolute;
   left: 0;
-  top: 33px;
+  top: 28px;
 }
 .swiper-control .swiper-button-prev::after {
   content: url(../images/work/arrow/arrow-left.png);
